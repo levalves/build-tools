@@ -2,7 +2,7 @@
 
 This repo holds the build scripts used by several Levalves projects.
 
-- Current version of this lib: [v1](https://github.com/levalves/build-tools/tree/v3)
+- Current version of this lib: [v1](https://github.com/levalves/build-tools/tree/v1)
 
 
 For older versions, read de docs:
@@ -20,7 +20,7 @@ On your main script, clone some **major** version of this repo and import the de
 set +x
 
 if [ ! -d "$PWD/build-tools" ]; then
-  git clone --single-branch --branch v3 git@github.com:levalves/build-tools.git "$PWD/build-tools"
+  git clone --single-branch --branch v1 git@github.com:levalves/build-tools.git "$PWD/build-tools"
 fi
 
 __BUILD_TOOLS_PATH="./build-tools"
