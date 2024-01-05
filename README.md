@@ -2,14 +2,12 @@
 
 This repo holds the build scripts used by several Levalves projects.
 
-- Current version of this lib: [v3](https://github.com/levalves/build-tools/tree/v3)
+- Current version of this lib: [v1](https://github.com/levalves/build-tools/tree/v3)
 
 
 For older versions, read de docs:
 
-- [v0](https://github.com/levalves/build-tools/blob/v0/README.md)
 - [v1](https://github.com/levalves/build-tools/blob/v1/README.md)
-- [v2](https://github.com/levalves/build-tools/blob/v2/README.md)
 
 ## Usage
 
