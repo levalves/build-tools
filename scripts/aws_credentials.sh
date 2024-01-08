@@ -4,7 +4,7 @@ source "$__BUILD_TOOLS_PATH/scripts/log.sh"
 
 set_aws_credentials(){
   __AWS_ROLE_ARN=$1
-  __AUTOMATION_USER=${2:-jenkins}
+  __AUTOMATION_USER=${2:-azdevops}
   __APP_NAME=${3:-"$__AUTOMATION_USER"}
   __COMMIT_HASH=${4:-"$(date +%Y-%m-%d-%H-%M-%S)"}
 
@@ -33,7 +33,7 @@ set_aws_credentials(){
 }
 
 reset_aws_credentials(){
-  __AUTOMATION_USER=${1:-jenkins}
+  __AUTOMATION_USER=${1:-azdevops}
 
   if [ "$_AUTOMATION_USER" != "${__AUTOMATION_USER}" ]; then
     export AWS_SECRET_ACCESS_KEY=$_ASAK

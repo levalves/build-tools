@@ -18,7 +18,7 @@ Set AWS account via assume role method.
 |Name|Description|Default|Required|
 |----|-----------|-------|--------|
 |ROLE|AWS role ARN.|N/A|yes|
-|AUTOMATION_USER|CI/CD user.|jenkins|no|
+|AUTOMATION_USER|CI/CD user.|azdevops|no|
 |APP_NAME|Application name. Sets the `role-session-name` prefix of the call.|AUTOMATION_USER|no|
 |COMMIT_HASH|Application version. Sets the `role-session-name` suffix of the call.|AAAA-mm-dd-HH-MM-SS|no|
 
@@ -33,7 +33,7 @@ __BUILD_TOOLS_PATH="./build-tools"
 source "$__BUILD_TOOLS_PATH/scripts/aws_credentials.sh"
 
 # SET AUTOMATION USER
-AUTOMATION_USER="jenkins"
+AUTOMATION_USER="azdevops"
 
 # SET COMMIT_HASH
 COMMIT_HASH="${COMMIT_HASH:-$(git log --pretty=format:%h -n 1)}"
@@ -62,7 +62,7 @@ Resets AWS credentials to prior `set_aws_credentials` utilization.
 
 |Name|Description|Default|Required|
 |----|-----------|-------|--------|
-|AUTOMATION_USER|Usuário utilizado na ferramenta de automação|jenkins|no|
+|AUTOMATION_USER|Usuário utilizado na ferramenta de automação|azdevops|no|
 
 ### Outputs
 
@@ -75,7 +75,7 @@ __BUILD_TOOLS_PATH="./build-tools"
 source "$__BUILD_TOOLS_PATH/scripts/aws_credentials.sh"
 
 # SET AUTOMATION USER
-AUTOMATION_USER="jenkins"
+AUTOMATION_USER="azdevops"
 
 source "$__BUILD_TOOLS_PATH/scripts/aws_credentials.sh"
 reset_aws_credentials $AUTOMATION_USER
