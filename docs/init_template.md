@@ -16,7 +16,7 @@ Add a `init_template.csv` file at build.sh's directory and you're good to go.
 
 |Pattern|Replacement|Target Files Path|
 |-------|-----------|----------|
-|__DEFAULT_AWS_ACCOUNT;|327667905059;|build.sh terraform/variables.tf|
+|__DEFAULT_AWS_ACCOUNT;|000000000001;|build.sh terraform/variables.tf|
 
 Notes:
 - The separator field is a semicolon.
@@ -25,7 +25,7 @@ Notes:
 Sample `init_template.csv`:
 
 ```
-__DEFAULT_AWS_ACCOUNT;327667905059;build.sh terraform/variables.tf
+__DEFAULT_AWS_ACCOUNT;000000000001;build.sh terraform/variables.tf
 __DEFAULT_APP_NAME;dummy-app;build.sh terraform/variables.tf
 ```
 
